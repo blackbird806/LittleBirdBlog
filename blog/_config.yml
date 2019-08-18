@@ -1,7 +1,7 @@
 # Jekyll configuration
 
 name: LittleBirdBlog
-description: A Programming and Gamedev blog
+description: A Programming and Gamedev blog.
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://127.0.0.1:4000

@@ -5,7 +5,9 @@ date: 2019-08-19
 comments: false
 ---
 
-# Hey there welcome on my blog
+<br>
+
+#### Hey there welcome on my blog.
 
 If you don't know what this blog is about, I invite you to read the [about]( {{ site.baseurl }}/about.html) section.
 
@@ -17,5 +19,3 @@ We will talk mostly about gamedev and C++ programming, but maybe other langages 
 
 
 A little bit of everything, tutorials, thoughts, presentations, why not news and certainly some random stuff. 
-
-<!--more-->

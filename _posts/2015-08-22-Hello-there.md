@@ -13,7 +13,7 @@ If you don't know what this blog is about, I invite you to read the [about]( {{ 
 
 > So What's going on here ?
 
-We will talk mostly about gamedev and C++ programming, but maybe other langages too (I think there will be some articles on D, and in the future rust and Jai).
+We will talk mostly about gamedev and C++ programming, but maybe other langages too (I think there will be some articles on D, and later maybe rust and Jai).
 
 > What kind of articles will we see ?
 

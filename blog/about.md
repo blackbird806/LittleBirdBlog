@@ -16,7 +16,7 @@ My favourites games styles are sandbox, rpg, mmo and strategy games but I apprec
 Here you will find articles mostly on C++ and video game programming, but I may write on other subjects too.
 I created this blog in order to share my knowledge; In my learning experience I found that a lot of topics in game dev / programming are hard to find and that's why I want to change this. Another motivation for this blog is for my own learning process and I think that teaching is a great way to understand.
 
- "Ce que l’on conçoit bien s’énonce clairement" Nicolas Boileau, Art poétique, Chant I.
+"Ce que l’on conçoit bien s’énonce clairement" Nicolas Boileau, Art poétique, Chant I.
 
 ### contact
 

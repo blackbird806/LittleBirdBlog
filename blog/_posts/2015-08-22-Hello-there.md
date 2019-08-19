@@ -17,5 +17,4 @@ We will talk mostly about gamedev and C++ programming, but maybe other langages 
 
 > What kind of articles will we see ?
 
-
-A little bit of everything, tutorials, thoughts, presentations, why not news and certainly some random stuff. 
+A little bit of everything, tutorials, thoughts, presentations, news and certainly some random stuff. 

@@ -23,5 +23,5 @@ I created this blog in order to share my knowledge; In my learning experience I 
 Feel free to contact me at blackbirdcry806@gmail.com.
 
 <!-- TODO
-For jobs offers and professinal stuff you can check out my [CV]() and my [portfolio]({{site.portfolio_link}}).
- -->
+For jobs offers and professinal stuff you can check out my [CV]() and my [portfolio]({{site.portfolio_link}}). -->
+

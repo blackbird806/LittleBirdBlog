@@ -10,7 +10,7 @@ url: https://blackbird806.github.io/LittleBirdBlog/
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: 'https://blackbird806.github.io/LittleBirdBlog/'
+baseurl: 'LittleBirdBlog'
 
 # links 
 

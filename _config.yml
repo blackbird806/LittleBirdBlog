@@ -39,8 +39,10 @@ disqus: ''
 permalink: /:year/:month/:title
 paginate: 3
 
-highlighter: rouge
 markdown: kramdown
+kramdown:
+  highlighter: rouge
+
 plugins: ['jekyll-paginate']
 
 exclude: ['README.md', 'LICENSE']

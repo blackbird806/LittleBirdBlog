@@ -147,4 +147,23 @@ which outputs :
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 ...
 ```
 
-Here there is no much to explain, begin() return a pointer to the first element of our array and end() to the last element, since a pointer fulfilled the conditions described above
+Here there is no much to explain, begin() return a pointer to the first element of our array and end() to the last element, since a pointer fulfilled the conditions described above the code compile and produce the desired output.
+
+But let's see what's behind with [CppInsight](https://cppinsights.io/).
+```cpp
+CustomArray c = CustomArray();
+{
+  CustomArray & __range1 = c;
+  const int * __begin1 = __range1.begin();
+  const int * __end1 = __range1.end();
+  for(; __begin1 != __end1; ++__begin1) 
+  {
+    int e = *__begin1;
+    std::operator<<(std::cout.operator<<(e), " ");
+  }
+}
+```
+
+This is the code "produced" by our range based for loop. So here we can see what the specification described to us before.
+__range1 is a reference on our container, __begin1 contain our iterator, in our case a int*, __end1 contain an element comparable with __begin1 which is in our case also an int* and then we can see that the element 'e' contain the return value of the iterator dereferencement.
+Then we enter in our loop body and print the element.

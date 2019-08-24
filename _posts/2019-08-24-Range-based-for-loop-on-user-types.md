@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Range based for loop on user defined types"
-date: 2019-08-20
+date: 2019-08-24
 comments: false
 ---
 

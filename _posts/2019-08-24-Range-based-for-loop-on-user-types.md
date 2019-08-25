@@ -164,7 +164,7 @@ CustomArray c = CustomArray();
 ```
 
 This is the code "produced" by our range based for loop. So here we can see what the specification described to us before.
-__range1 is a reference on our container, __begin1 contain our iterator, in our case a int*, __end1 contain an element comparable with __begin1 which is in our case also an int* and then we can see that the element 'e' contain the return value of the iterator dereferencement.
+__range1 is a reference on our container, __begin1 contain our iterator, in our case a int* , __end1 contain an element comparable with __begin1 which is in our case also an int* and then we can see that the element 'e' contain the return value of the iterator dereferencement.
 Then we enter in our loop body and print the element.
 
 Now let's look to a more complex example : 

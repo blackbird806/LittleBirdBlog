@@ -17,7 +17,7 @@ Can be converted in this in C++11 :
 
 ```cpp
 int array[] = {0, 1, 2, 3, 4, 5};
-for (auto const& it : array)
+for (auto it : array)
     std::cout << it << " ";
 ```
 
@@ -113,7 +113,7 @@ class CustomArray
     int data[100];
 
     public:
-    CustomArray()
+    CustomArray() noexcept
     {  
         for (int i = 0; i < 100; i++)
             data[i] = i;
@@ -175,28 +175,28 @@ Now let's look to a more complex example :
 #include <tuple>
 
 template<typename K, typename V, size_t Size>
-struct myMap
+struct MyMap
 {
     K keys[Size];
     V values[Size];
 
     struct iterator
     {
-        myMap& ref;
+        MyMap& ref;
         size_t index;
 
-        auto operator*()
+        auto operator*() noexcept
         {
             return std::make_tuple(index, ref.keys[index], ref.values[index]);
         }
 
-        iterator& operator++()
+        iterator& operator++() noexcept
         {
             index++;
             return *this;
         }
 
-        bool operator!=(iterator const& other)
+        bool operator!=(iterator const& other) const noexcept
         {
             return index != other.index;
         }
@@ -215,7 +215,7 @@ struct myMap
 
 int main()
 {
-    myMap<float, char, 3> m;
+    MyMap<float, char, 3> m;
     m.keys[0] = 1.2;
     m.values[0] = 'a';
     m.keys[1] = 2.3;

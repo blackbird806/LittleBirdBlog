@@ -47,7 +47,7 @@ arr = arr2; // this is ok since arr and arr2 are of the same type
 ```
 
 A [monotonic_buffer_resource](https://en.cppreference.com/w/cpp/memory/monotonic_buffer_resource) is a memory resource that allow very fast allocation but can only release it's memory all at once, and a [synchronized_pool_resource](https://en.cppreference.com/w/cpp/memory/synchronized_pool_resource) is a thread safe collection of pools.
-I will not dig deeper than that on allocation strategies since it's not the topic here, butI may write an article on it later.
+I will not dig deeper than that on allocation strategies since it's not the topic here, but I may write an article on it later.
 
 You may already noticed it but another cool thing about pma is that since the allocation strategy depend now on the memory resource rather than the allocator type, we can decide at runtime of the allocation strategy rather at compile time.
 So we can do some stuff like this :

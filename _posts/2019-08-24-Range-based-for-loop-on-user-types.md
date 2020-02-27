@@ -37,7 +37,7 @@ for (std::vector<int>::iterator it = array.begin(); it != array.end(); ++it)
 C++11 version :
 ```cpp
 std::vector array = {0, 1, 2, 3, 4, 5};
-for (auto const& it : array)
+for (auto it : array)
 {
     std::cout << it << " ";
 }

@@ -25,16 +25,16 @@ So I started with the initial system, a list of productions rules and an interpr
 
 So my first instructions were:
 
-_F_ : forward n following the current direction    
-_f_ : forward n following the current direction without drawing lines  
+_F_ : forward _n_ following the current direction    
+_f_ : forward _n_ following the current direction without drawing lines  
 _[_ : save current state  
 _]_ : restore last saved state  
-_+_ : rotate k degree aroud y axis  
-_-_ : rotate -k degree aroud y axis  
-_^_ : rotate k degree aroud x axis  
-_&_ : rotate -k degree aroud x axis  
-_/_ : rotate k degree aroud z axis  
-_\\_ : rotate -k degree aroud z axis  
+_+_ : rotate _k_ degree aroud y axis  
+_-_ : rotate _-k_ degree aroud y axis  
+_^_ : rotate _k_ degree aroud x axis  
+_&_ : rotate _-k_ degree aroud x axis  
+_/_ : rotate _k_ degree aroud z axis  
+_\\_ : rotate _-k_ degree aroud z axis  
 _|_ : rotate 180 degree aroud y axis  
 
 so after implementing that I was able to draw some things like this :
@@ -80,4 +80,4 @@ So the big difference here is that all rotation and forward instructions may not
 In this small project I only implemented / studied a small part of L-Systems, there is a lot more to discover and to do.
 Yet we didn't see nodes and edges rewritting, environment influence, inflorescence, ...  
 If you want to learn more about L-Systems, I highly recommend _The algorithmic beauty of plants_ by Aristid Lindenmayer and Przemslaw Prusinkiewicz, this is the best and most complete reference about L-Systems.
-I also recommend the research paper [_Evolving Lindenmayer systms in a competitive environment_](https://jobtalle.com/posts/2019_8_1/EvolvingLSystems.pdf) by Job J.V. Talle, which is an intersting work on top of _The algorithmic beauty of plants_.
+I also recommend the research paper [_Evolving Lindenmayer systems in a competitive environment_](https://jobtalle.com/posts/2019_8_1/EvolvingLSystems.pdf) by Job J.V. Talle, which is an intersting work on top of _The algorithmic beauty of plants_.

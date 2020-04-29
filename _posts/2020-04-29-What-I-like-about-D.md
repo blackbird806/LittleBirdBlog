@@ -104,8 +104,7 @@ This code will print 7 at compile time and 5 at run time, the same function can 
 I see you, saying "yeah theses features are great, but C++ have them too".
 Now I'll show you why D metaprogramming is so powerfull and why C++ is a way behind D in this domain.
 
-1. String mixins
-
+String mixins.  
 With string mixin D can compiles an arbitrary string as D code __At compile time__.
 
 ```D

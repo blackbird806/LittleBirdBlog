@@ -184,7 +184,7 @@ There are some features in the code above that we didn't cover, but the goal her
 
 # Going further
 
-I highly [encourage you to try D](https://dlang.org/) and [do the Dlang tour](https://tour.dlang.org/) (a really great tutorial about the D basics).
+I highly [encourage you to try D](https://dlang.org/) and [do the Dlang tour](https://tour.dlang.org/) (a really great tutorial about the D basics).  
 You can also join the [D community on discord](https://discordapp.com/invite/bMZk9Q4).  
 On my side, I will certainly write more about D, so stay tuned.
 

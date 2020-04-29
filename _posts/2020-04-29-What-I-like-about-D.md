@@ -5,7 +5,7 @@ date: 2020-04-29
 comments: false
 ---
 
-```D
+```d
 import std.stdio;
 
 void main() {
@@ -33,7 +33,7 @@ I will also not show [every D feature](https://dlang.org/spec/spec.html) since t
 ### D templates
 
 D's syntax for templates is a little shorter than C++ :
-```D
+```d
 import std.stdio;
 // here T is the type name
 auto add(T)(T a, T b) {
@@ -46,7 +46,7 @@ void main() {
 ```
 But where it become interesting is when we use template in a little more advanced way :
 
-```D
+```d
 import std.stdio;
 
 void printEven(ArgTypes...)(ArgTypes args) {
@@ -65,7 +65,7 @@ output :
 The following code iterate on each argument of the variadic template with the foreach statement and then print only the even arguments. Yes it's that easy to iterate on variadic template parameters in D.
 That's what I love with D, metaprogramming and template stuff is a way easier, more compact and more powerfull than in C++.
 Let's look to another example :
-```D
+```d
 import std.stdio;
 
 void templatePrint(string str)() {
@@ -83,7 +83,7 @@ The above exmaple will print hello during compilation, since str is a template p
 
 D have also a really powerfull feature called CTFE (Compile Time Function Evaluation), there is a similar feature in modern C++ with constexpr and consteval.
 A simple example:
-```D
+```d
 import std.stdio;
 
 int add(int a, int b) {
@@ -107,7 +107,7 @@ Now I'll show you why D metaprogramming is so powerfull and why C++ is a way beh
 String mixins.  
 With string mixin D can compiles an arbitrary string as D code __At compile time__.
 
-```D
+```d
 mixin("int b = 5;");
 assert(b == 5); // compiles just fine
 ```
@@ -116,7 +116,7 @@ assert(b == 5); // compiles just fine
 Remember NTTP ?
 Let's look at this example from Dlang.org.
 
-```D
+```d
 import std.stdio : writeln;
 
 auto calculate(string op, T)(T lhs, T rhs) {
@@ -137,7 +137,7 @@ Now you see it right ?
 
 We can even go further with D's static reflection, and template mixins:
 
-```D
+```d
 import std.stdio : writeln;
 
 struct Vec3 {

@@ -14,25 +14,25 @@ void main() {
 ```
 > A hello world in Dlang.
 
-Some times ago I discovered [the D programming language](https://dlang.org/) which is now one of my favourite if not my favourite language.
-So in this post I 'll show you some features that I love in D.
+Sometime ago I discovered [the D programming language](https://dlang.org/) which is now one of my favourite, if not my favourite, languages.
+In this post I'll show you some D features that I love.
 
 But first of all, a little intro.
 
 # The D programming language 
 
-D was created in 2001 by Walter Bright with lessons learned from C++. D is really close to C++ (especially modern C++) but have much more features, a cleaner syntax, faster compile times, and so on.
-D have also a fully optional garbage collector to handle memory (this mean you can disable it in some part of your programs or even disable it in your whole project), which allow to write more compact and readable code.
+D was created in 2001 by Walter Bright with lessons learned from C++. D is really close to C++ (especially modern C++) but has more features, a cleaner syntax, faster compile times, and so on.
+D also has fully optional garbage collector to manage memory (this means you can disable it in some part of your programs or even disable it in your whole project), which allows for more compact and readable code.
 
 
 # Some Great D features
 
-For the following of this post I will assume you already know most of C++ features in order to compare it to D.
-I will also not show [every D feature](https://dlang.org/spec/spec.html) since there is a way too much.
+For the remainder of this post, I will assume you already know most C++ features in order to compare it with D.
+I will also not show [every D feature](https://dlang.org/spec/spec.html), but only some of my favourites.
 
 ### D templates
 
-D's syntax for templates is a little shorter than C++ :
+D's syntax for templates is a little shorter than the C++ syntax :
 ```d
 import std.stdio;
 // here T is the type name
@@ -44,7 +44,7 @@ void main() {
 	writeln("a + b = ", add(5, 3));
 }
 ```
-But where it become interesting is when we use template in a little more advanced way :
+But where it become interesting is when we use templates in a slightly more advanced way :
 
 ```d
 import std.stdio;
@@ -62,9 +62,9 @@ void main() {
 output : 
 > ``` 0 world ```
 
-The following code iterate on each argument of the variadic template with the foreach statement and then print only the even arguments. Yes it's that easy to iterate on variadic template parameters in D.
-That's what I love with D, metaprogramming and template stuff is a way easier, more compact and more powerfull than in C++.
-Let's look to another example :
+The above code iterates on each argument of the variadic template with the ```foreach``` statement, and then prints only the even arguments. Yes, it's that easy to iterate on variadic template parameters in D.
+That's what I love about D, metaprogramming and template stuff is much easier, more compact and more powerfull than in C++.
+Let's look at another example :
 ```d
 import std.stdio;
 
@@ -76,12 +76,13 @@ void main() {
 	templatePrint!("hello")();
 }
 ```
-D support NTTP (Non Type Template Parameter), a feature comming in C++20, but which D support since a long time ago.
-The above exmaple will print hello during compilation, since str is a template parameter, the ```pragma(msg, str);``` is a special statement that told the compiler to print ``` str ``` during compilation.
+D supports NTTP (Non Type Template Parameter), a feature comming in C++20, but which D has supported for a long time.
+The above exmaple will print ```hello``` during compilation, since ```str``` is a template parameter, the ```pragma(msg, str);``` is a special statement that tells the compiler to print ``` str ``` during compilation.
+
 
 ### CTFE 
 
-D have also a really powerfull feature called CTFE (Compile Time Function Evaluation), there is a similar feature in modern C++ with constexpr and consteval.
+D have also a really powerfull feature called CTFE (Compile Time Function Evaluation), which is somewhat similar to ```constexpr``` and ```consteval``` in modern C++.
 A simple example:
 ```d
 import std.stdio;
@@ -97,14 +98,14 @@ void main() {
 }
 ```
 
-This code will print 7 at compile time and 5 at run time, the same function can be used both at compile time and at runtime without any specifiers unlike C++.
+This code will print 7 at compile time and 5 at run time, the same function can be used both at compile time and at run time without any specifiers unlike C++.
 
-### The true power of D metaprogramming
+## The true power of D metaprogramming
 
-I see you, saying "yeah theses features are great, but C++ have them too".
+I see you, saying "yeah, theses features are great, but C++ has them too."
 Now I'll show you why D metaprogramming is so powerfull and why C++ is a way behind D in this domain.
 
-String mixins.  
+### String mixins  
 With string mixin D can compiles an arbitrary string as D code __At compile time__.
 
 ```d
@@ -114,7 +115,7 @@ assert(b == 5); // compiles just fine
 > Okay but what's the use of a such feature ?
 
 Remember NTTP ?
-Let's look at this example from Dlang.org.
+Let's look at this example from dlang.org.
 
 ```d
 import std.stdio : writeln;
@@ -135,7 +136,7 @@ void main() {
 
 Now you see it right ?
 
-We can even go further with D's static reflection, and template mixins:
+We can go even further with D's static reflection and template mixins:
 
 ```d
 import std.stdio : writeln;
@@ -176,12 +177,15 @@ void main() {
 }
 ```
 
-Here we have a simple metaprogram that take a struct as input and will generate as output another struct with an array of each of his members.
-And of course all of this is generated at compile time. 
-There is some features wee didn't saw in the code above, but the goal here is more to understand the power and the possibilities of D metaprogramming rather than a tutorial (I may write one in the future though).
+Here we have a simple metaprogram that takes a struct type as input and generates another struct type as output containing an array of each of the input type's members.
+And of course, all of this is generated at compile time. 
+There are some features in the code above that we didn't cover, but the goal here is more to demonstrate the power and the possibilities of D metaprogramming rather than provide a complete language tutorial (I may write one in the future though).
 
 
 # Going further
 
-I highly encourage you to try [D](https://dlang.org/), do the [Dlang tour](https://tour.dlang.org/) (a really great tutorial about the D basics).
-On my side I will certainly write more about D, so stay tuned.
+I highly [encourage you to try D](https://dlang.org/) and [do the Dlang tour](https://tour.dlang.org/) (a really great tutorial about the D basics).
+You can also join the [D community on discord](https://discordapp.com/invite/bMZk9Q4).  
+On my side, I will certainly write more about D, so stay tuned.
+
+PS : An huge thanks to aldacron from the D discord for his proofreading, corrections and feedbacks.

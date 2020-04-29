@@ -100,7 +100,7 @@ void main() {
 
 This code will print 7 at compile time and 5 at run time, the same function can be used both at compile time and at run time without any specifiers unlike C++.
 
-## The true power of D metaprogramming
+### The true power of D metaprogramming
 
 I see you, saying "yeah, theses features are great, but C++ has them too."
 Now I'll show you why D metaprogramming is so powerfull and why C++ is a way behind D in this domain.

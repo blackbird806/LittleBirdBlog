@@ -7,7 +7,7 @@ title: About
 
 Hello there, I'm blackbird806, and I'm a game developer and programmer from France.  
 I program / make games since 2014 and today I'm student in video game programming in Paris.  
-I started programming in C++ which is now my favourite langage, but I also like C, assembly, C#, lua, moonscript, Go and D.  
+I started programming in C++ which is now my favourite langage, but I also like C, assembly, lua, moonscript, Go and D.  
 I also love gamejams, I've made several games for the [Ludum Dare](https://ldjam.com/) (which is an awesome gamejam !).  
 My favourites games styles are sandbox, rpg, mmo and strategy, but I appreciate all kind of games.
 
